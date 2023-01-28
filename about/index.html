@@ -4,6 +4,21 @@ title: About Rick Donnelly
 ---
 
 <div class="about">
+  <script type="text/javascript">
+    function decode(a) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
+          ? c : c - 26);
+      })
+    }; 
+    function openMailer(element) {
+      var y = decode("znvygb:xpjrd2@gmail.com");
+      element.setAttribute("href", y);
+      element.setAttribute("onclick", "");
+      element.firstChild.nodeValue = "Open email software";
+    };
+</script>
+
   <h1>About</h1>
     <p>I've spent most of my working life in a pretty obscure niche of engineering devoted to studying the effects of public policy on infrastructure investments. My work took me all over the world. Too many people plopped into the seat next to me on flights and asked, "so, what do you do?" Craving privacy, I'd tell them something along the lines of, "I create and simulate artificial societies from snapshots of real-world populations to study how politics and investments might effect social and travel behavior and their aggregate impacts upon the urban environment and transport systems." That would usually ensure no more questions, but once someone came back with, "what does that mean in English?" To that I replied, "I kill white elephants." No one ever asked further questions.</p>
 
@@ -11,6 +26,6 @@ title: About Rick Donnelly
 
     <p>In this personal site I describe stuff I'm tinkering with, thinking about, and failing with in the improbably combination of current interests. Some started as hobbies but now morphing into more serious endeavors in <a href="https://ghostdiving.org">Ghost Diving</a> and <a href="http://www.southbears.org">Southbears</a>.</p>
 
-    <p>I haven't figured out yet how to allow others to leave comments in Github Pages, so comments and questions will have to <a href="mailto:xpjrd2@gmail.com">reach me via email</a>. Which I don't read very often, with apologies. But I will get to it at least weekly.<p>
+    <p>I haven't figured out yet how to allow others to leave comments in Github Pages, so for comments and questions you'll have to <a id="email" href=" " onclick='openMailer(this);'>email me</a>. Which I don't read very often, with apologies. But I will get to it at least weekly.<p>
 
 </div>
