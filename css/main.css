@@ -17,7 +17,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #028090;
+    color: #334195;  /* Dark cornflower blue */
 }
 a:hover {
     text-decoration: underline;
