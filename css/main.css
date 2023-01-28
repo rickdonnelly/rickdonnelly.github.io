@@ -4,7 +4,7 @@ body {
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 2px;
     list-style: none;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@ p {
     font-size: 1.25em;
     line-height: 1.2em;
     color: #333;
-    padding: 3px;  /* Originally 12, but 0 is too much */
+    padding: 5px;  /* Originally 12, but 0 is too much */
     margin-bottom: 0em;
     margin-top: 0em;
 }
