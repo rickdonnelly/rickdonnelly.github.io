@@ -35,6 +35,11 @@ p {
     padding: 0px;
 }
 
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
 li {
     padding-right: .6em;
     margin-bottom: .6em;
