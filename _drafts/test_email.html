@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Replace placeholder text below with {{ page.title }} -->
+    <title>Testing email link</title>
+    <!-- Change href below to css/main.css when finished testing -->
+    <link rel="stylesheet" type="text/css" href="template.css">
+  </head>
+  <body>
+    <!-- This composes the navigation bar at top of the webpage -->
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/psychiatry">Psychiatry</a></li>
+        <li><a href="/diving">Diving</a></li>
+        <li><a href="/radio">Radio</a></li>
+      </ul>
+    </nav>
+
+    <!-- This is the code from the IONOS webpage -->
+    <!-- https://www.ionos.com/digitalguide/e-mail/e-mail-security/protecting-your-email-address-how-to-do-it/ -->
+    <script type="text/javascript">
+      function decode(a) {
+        return a.replace(/[a-zA-Z]/g, function(c){
+          return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+        })
+      };
+      function openMailer(element) {
+        var y = decode("znvygb:kcweq2@tznvy.pbz");
+        element.setAttribute("href", y);
+        element.setAttribute("onclick", "");
+        element.firstChild.nodeValue = "Open email software";
+      };
+    </script>
+
+    <div class="container">
+
+    In the meantime, if you want to add comments <a id="email" href=" " onclick='openMailer(this);'>email me.</a>. Thanks!
+
+    <!-- End of pasted content -->
+
+    </div><!-- /.container -->
+    <footer style="padding: 5px; margin-top: 10px;">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+    </footer>
+  </body>
+</html>
